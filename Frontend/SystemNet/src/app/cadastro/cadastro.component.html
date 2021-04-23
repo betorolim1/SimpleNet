@@ -1,0 +1,21 @@
+<div class="wrapper">
+  <span>Parcelas</span>
+  <input
+    type="number"
+    [(ngModel)]="plots"
+    autofocus
+    (change)="handlePlots($event)"
+  />
+
+  <span>Valor</span>
+  <input
+    type="number"
+    [(ngModel)]="value"
+    autofocus
+    (change)="handleValue($event)"
+  />
+
+  <button (click)="onSave()">Salvar</button>
+
+  <span *ngIf="result !== null" class="result">Resultado: {{ result | currency : '' : 'symbol' : '1.0-3' }}</span>
+</div>

@@ -1,0 +1,17 @@
+/* You can add global styles to this file, and also import other style files */
+.wrapper {
+  margin: 50px;
+}
+
+span {
+  display: block;
+}
+
+button {
+  display: block;
+  margin-top: 20px;
+}
+
+.result {
+  margin-top: 20px;
+}

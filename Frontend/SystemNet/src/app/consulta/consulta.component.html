@@ -1,0 +1,8 @@
+<div class="wrapper">
+  <span>Numero</span>
+  <input type="number" [(ngModel)]="number" autofocus/>
+
+  <button (click)="onSave()">Salvar</button>
+
+  <span *ngIf="result !== null" class="result">Resultado: {{ result }}</span>
+</div>
